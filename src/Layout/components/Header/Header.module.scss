@@ -1,0 +1,33 @@
+:root {
+    --height-header: 50px;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: var(--bgr-header);
+    
+}
+
+.row {
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+    height: var(--height-header);
+    padding: 0px 15px;
+    
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--height-header);
+}
+
+.link {
+
+    .img {
+        line-height: var(--height-header);
+        display: block;
+    }
+}

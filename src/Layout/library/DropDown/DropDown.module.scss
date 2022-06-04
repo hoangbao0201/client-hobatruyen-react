@@ -1,0 +1,94 @@
+.wrapper {
+    left: 0px;
+    position: absolute;
+    box-shadow: 0px 0px 6px #ccc;
+    background-color: #fff;
+    border-radius: 2px 2px 5px 5px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+
+
+//General-----------------------------------------
+
+.list-column {
+    float: left;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.link {
+    display: block;
+    color: var(--text-color);
+    
+    &:hover {
+        color: #e74c3c;
+        margin-left: 5px;
+    }
+}
+
+.link {
+    transition: 200ms;
+    white-space: nowrap;
+}
+
+.icon {
+    font-size: 1.3rem;
+}
+
+//set --------------------------------
+
+.Category {
+    min-width: 600px;
+    padding: 5px 5px;
+
+    .list-column {
+        width: 25%;
+    }
+
+    .link {
+        padding: 0px 10px;
+    }
+}
+
+.Rank {
+    min-width: 300px;
+
+    .list-column {
+        width: 50%;
+    }
+    .link {
+        padding: 3px 10px;
+    }
+}
+
+//------------------------------------------
+
+.styleData {
+    float: left;
+    width: 100%;
+    bottom: 0px;
+    color: var(--text-color);
+    padding: 8px 15px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    animation-name: myFade;
+    animation-duration: 0.8s;
+
+    div {
+        border-top: 1px solid #ccc;
+        padding-top: 4px;
+    }
+}
+
+@keyframes myFade {
+    from {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+    }
+}

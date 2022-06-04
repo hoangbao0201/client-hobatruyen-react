@@ -1,0 +1,42 @@
+:root {
+    --bgr-header: #3f3567;
+    --white-color: #fff;
+    --black--color: #000;
+    --text-color: #333;
+
+    --title-color: #2980b9;
+    --border-side: #ecf0f1;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Tahoma, sans-serif, Helvetica, Arial;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--white-color);
+}
+
+
+
+
+
+a,
+input,
+button {
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

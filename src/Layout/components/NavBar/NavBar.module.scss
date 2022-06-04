@@ -1,0 +1,62 @@
+:root {
+    --height-wrap: 35px;
+}
+
+.wrapper {
+    width: 100%;
+    height: var(--height-wrap);
+    background-color: #e4e4e4;
+    z-index: 20;
+}
+
+.inner {
+    max-width: 1000px;
+    width: 100%;
+    height: var(--height-wrap);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item {
+    display: inline-block;
+    line-height: var(--height-wrap);
+    position: relative;
+
+    &:hover {
+        background-color: #ebebeb;
+    }
+}
+
+.item + .item {
+    border-left: 1px solid #ddd;
+}
+
+.link {
+    display: block;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    min-width: 45px;
+    text-align: center;
+    padding: 0px 8px;
+}
+
+//dropdown-----------------------
+
+.item:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+}
+
+
+//////////////////////////////////
+.active {
+    background-color: var(--white-color);
+    :hover {
+        background-color: var(--white-color);
+    }
+}
