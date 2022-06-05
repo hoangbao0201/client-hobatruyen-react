@@ -61,3 +61,12 @@
         background-color: var(--white-color);
     }
 }
+
+
+//reponsive
+
+@media (max-width: 990px) {
+    .wrapper {
+        display: none;
+    }
+}
