@@ -37,7 +37,7 @@ function DropDown({ itemData, className }) {
                 })}
                 {className === 'Category' && couter !== '' && (
                     <div className={cx('styleData')}>
-                        <div>{couter}</div>
+                        <div className={cx('text')}>{couter}</div>
                     </div>
                 )}
             </div>

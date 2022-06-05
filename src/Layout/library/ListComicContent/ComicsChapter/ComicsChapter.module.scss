@@ -1,0 +1,21 @@
+.grid-item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.chapter {
+    font-size: 13px;
+    color: #000;
+}
+
+.time {
+    color: silver;
+    font-size: 1.1rem;
+    font-style: italic;
+    right: 0px;
+    max-width: 47%;
+    overflow: hidden;
+    white-space: nowrap;
+}

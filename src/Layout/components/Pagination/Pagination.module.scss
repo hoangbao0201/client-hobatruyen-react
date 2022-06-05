@@ -1,0 +1,30 @@
+.grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    padding: 20px 5px;
+}
+
+.item {
+    margin: 3px;
+}
+
+// .item + .item {
+//     margin-left: 5px;
+// }
+
+.link {
+    width: 34px;
+    line-height: 35px;
+    display: block;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    background-color: var(--white-color);
+    font-size: 1.5rem;
+    border: 1px solid #aaa;
+
+    &:hover {
+        background-color: var(--text-hover);
+    }
+}

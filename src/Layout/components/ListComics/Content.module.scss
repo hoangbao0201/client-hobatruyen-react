@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -7px;
+}
+
+.item {
+    width: 25%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+//reponsive
+
+@media (min-width: 540px) and (max-width: 770px) {
+    .item {
+        width: 33.333333333%;
+    }
+}
+
+@media (min-width: 325px) and (max-width: 540px) {
+    .item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 325px) {
+    .item {
+        width: 100%;
+    }
+}

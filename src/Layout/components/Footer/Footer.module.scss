@@ -46,3 +46,18 @@
         border-bottom: 1px solid #fff;
     }
 }
+
+
+//reponsive
+
+@media (max-width: 770px) {
+    .inner {
+        display: block;
+    }
+    .data {
+        width: 100% !important;
+    }
+    .list-category {
+        width: 100% !important;
+    }
+}

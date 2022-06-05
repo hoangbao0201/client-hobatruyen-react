@@ -1,7 +1,7 @@
-import listComic from '~/assect/ListComic';
-
 import classNames from 'classnames/bind';
 import styles from './NavBar.module.scss';
+
+import FakeApi from '~/assect/FakeApi';
 import { Link } from 'react-router-dom';
 import DropDown from '~/Layout/library/DropDown';
 
@@ -12,7 +12,7 @@ function Navbar({ id }) {
         <div className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <ul className={cx('list-item')}>
-                    {listComic.ListNavbar.map((item, index) => {
+                    {FakeApi.ListNavbar.map((item, index) => {
                         return (
                             <li key={index} className={cx('item', `${item.id === id ? 'active' : ''}`)}>
                                 <Link className={cx('link')} to={item.href}>

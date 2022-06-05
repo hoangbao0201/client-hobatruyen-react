@@ -8,8 +8,6 @@
     overflow: hidden;
 }
 
-
-
 //General-----------------------------------------
 
 .list-column {
@@ -23,16 +21,14 @@
 .link {
     display: block;
     color: var(--text-color);
-    
+    transition: 200ms;
+    white-space: nowrap;
+    padding-left: 10px;
+
     &:hover {
         color: #e74c3c;
         margin-left: 5px;
     }
-}
-
-.link {
-    transition: 200ms;
-    white-space: nowrap;
 }
 
 .icon {
@@ -43,14 +39,9 @@
 
 .Category {
     min-width: 600px;
-    padding: 5px 5px;
-
+    
     .list-column {
         width: 25%;
-    }
-
-    .link {
-        padding: 0px 10px;
     }
 }
 
@@ -59,9 +50,6 @@
 
     .list-column {
         width: 50%;
-    }
-    .link {
-        padding: 3px 10px;
     }
 }
 
@@ -76,9 +64,9 @@
     font-size: 1.3rem;
     line-height: 1.5;
     animation-name: myFade;
-    animation-duration: 0.8s;
+    animation-duration: 1s;
 
-    div {
+    .text {
         border-top: 1px solid #ccc;
         padding-top: 4px;
     }
