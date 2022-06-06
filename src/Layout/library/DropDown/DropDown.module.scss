@@ -80,3 +80,13 @@
         opacity: 1;
     }
 }
+
+
+//reponsive
+
+
+@media (max-width: 990px) {
+    .wrapper {
+        left: -200px;
+    }
+}

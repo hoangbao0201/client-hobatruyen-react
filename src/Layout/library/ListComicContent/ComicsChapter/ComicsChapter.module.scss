@@ -8,6 +8,10 @@
 .chapter {
     font-size: 13px;
     color: #000;
+
+    &:hover {
+        color: var(--text-hover);
+    }
 }
 
 .time {

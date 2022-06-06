@@ -7,6 +7,7 @@ import ComicHot from './ComicsHot';
 
 import classNames from 'classnames/bind';
 import styles from './ComicsContent.module.scss';
+import Skeleton from 'react-loading-skeleton';
 
 const cx = classNames.bind(styles);
 
@@ -16,7 +17,7 @@ function ItemContent({ item }) {
             <div className={cx('grid-image')}>
                 {item.hot && <ComicHot />}
                 <Link to={item.link} className={cx('link-img')}>
-                    <img className={cx('img')} src={item.img} alt=""></img>
+                    {<img className={cx('img')} src={item.img} alt=""></img> || <Skeleton />}
                     <div className={cx('box-bottom')}>
                         <div className={cx('box-bottom-text')}>
                             <i>

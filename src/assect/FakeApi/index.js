@@ -9,6 +9,8 @@ import {
     faThumbsUp,
 } from '@fortawesome/free-solid-svg-icons';
 
+import imgComics from '~/assect/images/imgComics';
+
 const listComicFol = [
     {
         id: 1,
@@ -61,10 +63,24 @@ const listComicFol = [
     },
 ];
 
+// console.log(imgComics.img1);
+
 const Comics = [
     {
+        name: 'demo',
+        img: imgComics.img1,
+        link: '/truyen-tranh/hoa-son-tai-xuat',
+        chapterNew: '145',
+        timeNew: '2 phút trước',
+        view: '14.004.789',
+        heart: '5036',
+        comment: '6226',
+        hot: 'hot',
+        timeNewUpdate: '08:44 04/06/2022',
+    },
+    {
         name: 'Hoa Sơn Tái Xuất',
-        img: 'http://st.nettruyenco.com/data/comics/11/hoa-son-tai-xuat.jpg',
+        img: imgComics.img2,
         link: '/truyen-tranh/hoa-son-tai-xuat',
         chapterNew: '145',
         timeNew: '2 phút trước',
@@ -76,7 +92,7 @@ const Comics = [
     },
     {
         name: 'Streamer Pháp Sư',
-        img: 'http://st.nettruyenco.com/data/comics/39/streamer-phap-su.jpg',
+        img: imgComics.img3,
         link: '/truyen-tranh/streamer-phap-su',
         chapterNew: '289',
         timeNew: '3 giờ trước',
@@ -88,7 +104,7 @@ const Comics = [
     },
     {
         name: 'Tu Tiên Đại Chiến Siêu Năng Lực',
-        img: 'http://st.nettruyenco.com/data/comics/212/tu-tien-gia-dai-chien-sieu-nang-luc.jpg',
+        img: imgComics.img4,
         link: '/truyen-tranh/tu-tien-gia-dai-chien-sieu-nang-luc',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -100,7 +116,7 @@ const Comics = [
     },
     {
         name: 'Ta Là Tà Đế',
-        img: 'http://st.nettruyenco.com/data/comics/161/ta-la-ta-de.jpg',
+        img: imgComics.img5,
         link: '/truyen-tranh/ta-la-ta-de',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -112,7 +128,7 @@ const Comics = [
     },
     {
         name: 'Ta Trời Sinh Đã Là Nhân Vật Phản Diện',
-        img: 'http://st.nettruyenco.com/data/comics/235/ta-troi-sinh-da-la-nhan-vat-phan-dien.jpg',
+        img: imgComics.img6,
         link: '/truyen-tranh/ta-troi-sinh-da-la-nhan-vat-phan-dien',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -123,45 +139,20 @@ const Comics = [
         timeNewUpdate: '08:44 04/06/2022',
     },
     {
-        name: 'Chư Giới Tận Thế Online',
-        img: 'http://st.nettruyenco.com/data/comics/78/chu-gioi-tan-the-online.jpg',
-        link: '/truyen-tranh/chu-gioi-tan-the-online',
-        chapterNew: '268',
-        timeNew: '5 giờ trước',
-        view: '600.454.345',
-        heart: '90.432',
-        comment: '763.432',
+        name: 'demo',
+        img: imgComics.img1,
+        link: '/truyen-tranh/hoa-son-tai-xuat',
+        chapterNew: '145',
+        timeNew: '2 phút trước',
+        view: '14.004.789',
+        heart: '5036',
+        comment: '6226',
         hot: 'hot',
         timeNewUpdate: '08:44 04/06/2022',
     },
-    {
-        name: 'Đại Quản Gia Là Ma Hoàng',
-        img: 'http://st.nettruyenco.com/data/comics/188/dai-quan-gia-la-ma-hoang.jpg',
-        link: '/truyen-tranh/dai-quan-gia-la-ma-hoang',
-        chapterNew: '268',
-        timeNew: '5 giờ trước',
-        view: '600.454.345',
-        heart: '90.432',
-        comment: '763.432',
-        hot: 'hot',
-        timeNewUpdate: '08:44 04/06/2022',
-    },
-    {
-        name: 'Bắc Kiếm Giang Hồ',
-        img: 'http://st.nettruyenco.com/data/comics/47/bac-kiem-giang-ho.jpg',
-        link: '/truyen-tranh/bac-kiem-giang-ho',
-        chapterNew: '268',
-        timeNew: '5 giờ trước',
-        view: '600.454.345',
-        heart: '90.432',
-        comment: '763.432',
-        hot: 'hot',
-        timeNewUpdate: '08:44 04/06/2022',
-    },
-    //------------------------
     {
         name: 'Hoa Sơn Tái Xuất',
-        img: 'http://st.nettruyenco.com/data/comics/11/hoa-son-tai-xuat.jpg',
+        img: imgComics.img2,
         link: '/truyen-tranh/hoa-son-tai-xuat',
         chapterNew: '145',
         timeNew: '2 phút trước',
@@ -173,7 +164,7 @@ const Comics = [
     },
     {
         name: 'Streamer Pháp Sư',
-        img: 'http://st.nettruyenco.com/data/comics/39/streamer-phap-su.jpg',
+        img: imgComics.img3,
         link: '/truyen-tranh/streamer-phap-su',
         chapterNew: '289',
         timeNew: '3 giờ trước',
@@ -185,7 +176,7 @@ const Comics = [
     },
     {
         name: 'Tu Tiên Đại Chiến Siêu Năng Lực',
-        img: 'http://st.nettruyenco.com/data/comics/212/tu-tien-gia-dai-chien-sieu-nang-luc.jpg',
+        img: imgComics.img4,
         link: '/truyen-tranh/tu-tien-gia-dai-chien-sieu-nang-luc',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -197,7 +188,7 @@ const Comics = [
     },
     {
         name: 'Ta Là Tà Đế',
-        img: 'http://st.nettruyenco.com/data/comics/161/ta-la-ta-de.jpg',
+        img: imgComics.img5,
         link: '/truyen-tranh/ta-la-ta-de',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -209,7 +200,7 @@ const Comics = [
     },
     {
         name: 'Ta Trời Sinh Đã Là Nhân Vật Phản Diện',
-        img: 'http://st.nettruyenco.com/data/comics/235/ta-troi-sinh-da-la-nhan-vat-phan-dien.jpg',
+        img: imgComics.img6,
         link: '/truyen-tranh/ta-troi-sinh-da-la-nhan-vat-phan-dien',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -220,45 +211,20 @@ const Comics = [
         timeNewUpdate: '08:44 04/06/2022',
     },
     {
-        name: 'Chư Giới Tận Thế Online',
-        img: 'http://st.nettruyenco.com/data/comics/78/chu-gioi-tan-the-online.jpg',
-        link: '/truyen-tranh/chu-gioi-tan-the-online',
-        chapterNew: '268',
-        timeNew: '5 giờ trước',
-        view: '600.454.345',
-        heart: '90.432',
-        comment: '763.432',
+        name: 'demo',
+        img: imgComics.img1,
+        link: '/truyen-tranh/hoa-son-tai-xuat',
+        chapterNew: '145',
+        timeNew: '2 phút trước',
+        view: '14.004.789',
+        heart: '5036',
+        comment: '6226',
         hot: 'hot',
         timeNewUpdate: '08:44 04/06/2022',
     },
-    {
-        name: 'Đại Quản Gia Là Ma Hoàng',
-        img: 'http://st.nettruyenco.com/data/comics/188/dai-quan-gia-la-ma-hoang.jpg',
-        link: '/truyen-tranh/dai-quan-gia-la-ma-hoang',
-        chapterNew: '268',
-        timeNew: '5 giờ trước',
-        view: '600.454.345',
-        heart: '90.432',
-        comment: '763.432',
-        hot: 'hot',
-        timeNewUpdate: '08:44 04/06/2022',
-    },
-    {
-        name: 'Bắc Kiếm Giang Hồ',
-        img: 'http://st.nettruyenco.com/data/comics/47/bac-kiem-giang-ho.jpg',
-        link: '/truyen-tranh/bac-kiem-giang-ho',
-        chapterNew: '268',
-        timeNew: '5 giờ trước',
-        view: '600.454.345',
-        heart: '90.432',
-        comment: '763.432',
-        hot: 'hot',
-        timeNewUpdate: '08:44 04/06/2022',
-    },
-    //------------------------
     {
         name: 'Hoa Sơn Tái Xuất',
-        img: 'http://st.nettruyenco.com/data/comics/11/hoa-son-tai-xuat.jpg',
+        img: imgComics.img2,
         link: '/truyen-tranh/hoa-son-tai-xuat',
         chapterNew: '145',
         timeNew: '2 phút trước',
@@ -270,7 +236,7 @@ const Comics = [
     },
     {
         name: 'Streamer Pháp Sư',
-        img: 'http://st.nettruyenco.com/data/comics/39/streamer-phap-su.jpg',
+        img: imgComics.img3,
         link: '/truyen-tranh/streamer-phap-su',
         chapterNew: '289',
         timeNew: '3 giờ trước',
@@ -282,7 +248,7 @@ const Comics = [
     },
     {
         name: 'Tu Tiên Đại Chiến Siêu Năng Lực',
-        img: 'http://st.nettruyenco.com/data/comics/212/tu-tien-gia-dai-chien-sieu-nang-luc.jpg',
+        img: imgComics.img4,
         link: '/truyen-tranh/tu-tien-gia-dai-chien-sieu-nang-luc',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -294,7 +260,7 @@ const Comics = [
     },
     {
         name: 'Ta Là Tà Đế',
-        img: 'http://st.nettruyenco.com/data/comics/161/ta-la-ta-de.jpg',
+        img: imgComics.img5,
         link: '/truyen-tranh/ta-la-ta-de',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -306,7 +272,7 @@ const Comics = [
     },
     {
         name: 'Ta Trời Sinh Đã Là Nhân Vật Phản Diện',
-        img: 'http://st.nettruyenco.com/data/comics/235/ta-troi-sinh-da-la-nhan-vat-phan-dien.jpg',
+        img: imgComics.img6,
         link: '/truyen-tranh/ta-troi-sinh-da-la-nhan-vat-phan-dien',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -317,45 +283,20 @@ const Comics = [
         timeNewUpdate: '08:44 04/06/2022',
     },
     {
-        name: 'Chư Giới Tận Thế Online',
-        img: 'http://st.nettruyenco.com/data/comics/78/chu-gioi-tan-the-online.jpg',
-        link: '/truyen-tranh/chu-gioi-tan-the-online',
-        chapterNew: '268',
-        timeNew: '5 giờ trước',
-        view: '600.454.345',
-        heart: '90.432',
-        comment: '763.432',
+        name: 'demo',
+        img: imgComics.img1,
+        link: '/truyen-tranh/hoa-son-tai-xuat',
+        chapterNew: '145',
+        timeNew: '2 phút trước',
+        view: '14.004.789',
+        heart: '5036',
+        comment: '6226',
         hot: 'hot',
         timeNewUpdate: '08:44 04/06/2022',
     },
-    {
-        name: 'Đại Quản Gia Là Ma Hoàng',
-        img: 'http://st.nettruyenco.com/data/comics/188/dai-quan-gia-la-ma-hoang.jpg',
-        link: '/truyen-tranh/dai-quan-gia-la-ma-hoang',
-        chapterNew: '268',
-        timeNew: '5 giờ trước',
-        view: '600.454.345',
-        heart: '90.432',
-        comment: '763.432',
-        hot: 'hot',
-        timeNewUpdate: '08:44 04/06/2022',
-    },
-    {
-        name: 'Bắc Kiếm Giang Hồ',
-        img: 'http://st.nettruyenco.com/data/comics/47/bac-kiem-giang-ho.jpg',
-        link: '/truyen-tranh/bac-kiem-giang-ho',
-        chapterNew: '268',
-        timeNew: '5 giờ trước',
-        view: '600.454.345',
-        heart: '90.432',
-        comment: '763.432',
-        hot: 'hot',
-        timeNewUpdate: '08:44 04/06/2022',
-    },
-    //------------------------
     {
         name: 'Hoa Sơn Tái Xuất',
-        img: 'http://st.nettruyenco.com/data/comics/11/hoa-son-tai-xuat.jpg',
+        img: imgComics.img2,
         link: '/truyen-tranh/hoa-son-tai-xuat',
         chapterNew: '145',
         timeNew: '2 phút trước',
@@ -367,7 +308,7 @@ const Comics = [
     },
     {
         name: 'Streamer Pháp Sư',
-        img: 'http://st.nettruyenco.com/data/comics/39/streamer-phap-su.jpg',
+        img: imgComics.img3,
         link: '/truyen-tranh/streamer-phap-su',
         chapterNew: '289',
         timeNew: '3 giờ trước',
@@ -379,7 +320,7 @@ const Comics = [
     },
     {
         name: 'Tu Tiên Đại Chiến Siêu Năng Lực',
-        img: 'http://st.nettruyenco.com/data/comics/212/tu-tien-gia-dai-chien-sieu-nang-luc.jpg',
+        img: imgComics.img4,
         link: '/truyen-tranh/tu-tien-gia-dai-chien-sieu-nang-luc',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -391,7 +332,7 @@ const Comics = [
     },
     {
         name: 'Ta Là Tà Đế',
-        img: 'http://st.nettruyenco.com/data/comics/161/ta-la-ta-de.jpg',
+        img: imgComics.img5,
         link: '/truyen-tranh/ta-la-ta-de',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -403,7 +344,7 @@ const Comics = [
     },
     {
         name: 'Ta Trời Sinh Đã Là Nhân Vật Phản Diện',
-        img: 'http://st.nettruyenco.com/data/comics/235/ta-troi-sinh-da-la-nhan-vat-phan-dien.jpg',
+        img: imgComics.img6,
         link: '/truyen-tranh/ta-troi-sinh-da-la-nhan-vat-phan-dien',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -414,45 +355,20 @@ const Comics = [
         timeNewUpdate: '08:44 04/06/2022',
     },
     {
-        name: 'Chư Giới Tận Thế Online',
-        img: 'http://st.nettruyenco.com/data/comics/78/chu-gioi-tan-the-online.jpg',
-        link: '/truyen-tranh/chu-gioi-tan-the-online',
-        chapterNew: '268',
-        timeNew: '5 giờ trước',
-        view: '600.454.345',
-        heart: '90.432',
-        comment: '763.432',
+        name: 'demo',
+        img: imgComics.img1,
+        link: '/truyen-tranh/hoa-son-tai-xuat',
+        chapterNew: '145',
+        timeNew: '2 phút trước',
+        view: '14.004.789',
+        heart: '5036',
+        comment: '6226',
         hot: 'hot',
         timeNewUpdate: '08:44 04/06/2022',
     },
-    {
-        name: 'Đại Quản Gia Là Ma Hoàng',
-        img: 'http://st.nettruyenco.com/data/comics/188/dai-quan-gia-la-ma-hoang.jpg',
-        link: '/truyen-tranh/dai-quan-gia-la-ma-hoang',
-        chapterNew: '268',
-        timeNew: '5 giờ trước',
-        view: '600.454.345',
-        heart: '90.432',
-        comment: '763.432',
-        hot: 'hot',
-        timeNewUpdate: '08:44 04/06/2022',
-    },
-    {
-        name: 'Bắc Kiếm Giang Hồ',
-        img: 'http://st.nettruyenco.com/data/comics/47/bac-kiem-giang-ho.jpg',
-        link: '/truyen-tranh/bac-kiem-giang-ho',
-        chapterNew: '268',
-        timeNew: '5 giờ trước',
-        view: '600.454.345',
-        heart: '90.432',
-        comment: '763.432',
-        hot: 'hot',
-        timeNewUpdate: '08:44 04/06/2022',
-    },
-    //------------------------
     {
         name: 'Hoa Sơn Tái Xuất',
-        img: 'http://st.nettruyenco.com/data/comics/11/hoa-son-tai-xuat.jpg',
+        img: imgComics.img2,
         link: '/truyen-tranh/hoa-son-tai-xuat',
         chapterNew: '145',
         timeNew: '2 phút trước',
@@ -464,7 +380,7 @@ const Comics = [
     },
     {
         name: 'Streamer Pháp Sư',
-        img: 'http://st.nettruyenco.com/data/comics/39/streamer-phap-su.jpg',
+        img: imgComics.img3,
         link: '/truyen-tranh/streamer-phap-su',
         chapterNew: '289',
         timeNew: '3 giờ trước',
@@ -476,7 +392,7 @@ const Comics = [
     },
     {
         name: 'Tu Tiên Đại Chiến Siêu Năng Lực',
-        img: 'http://st.nettruyenco.com/data/comics/212/tu-tien-gia-dai-chien-sieu-nang-luc.jpg',
+        img: imgComics.img4,
         link: '/truyen-tranh/tu-tien-gia-dai-chien-sieu-nang-luc',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -488,7 +404,7 @@ const Comics = [
     },
     {
         name: 'Ta Là Tà Đế',
-        img: 'http://st.nettruyenco.com/data/comics/161/ta-la-ta-de.jpg',
+        img: imgComics.img5,
         link: '/truyen-tranh/ta-la-ta-de',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -500,7 +416,7 @@ const Comics = [
     },
     {
         name: 'Ta Trời Sinh Đã Là Nhân Vật Phản Diện',
-        img: 'http://st.nettruyenco.com/data/comics/235/ta-troi-sinh-da-la-nhan-vat-phan-dien.jpg',
+        img: imgComics.img6,
         link: '/truyen-tranh/ta-troi-sinh-da-la-nhan-vat-phan-dien',
         chapterNew: '268',
         timeNew: '5 giờ trước',
@@ -511,9 +427,45 @@ const Comics = [
         timeNewUpdate: '08:44 04/06/2022',
     },
     {
-        name: 'Chư Giới Tận Thế Online',
-        img: 'http://st.nettruyenco.com/data/comics/78/chu-gioi-tan-the-online.jpg',
-        link: '/truyen-tranh/chu-gioi-tan-the-online',
+        name: 'demo',
+        img: imgComics.img1,
+        link: '/truyen-tranh/hoa-son-tai-xuat',
+        chapterNew: '145',
+        timeNew: '2 phút trước',
+        view: '14.004.789',
+        heart: '5036',
+        comment: '6226',
+        hot: 'hot',
+        timeNewUpdate: '08:44 04/06/2022',
+    },
+    {
+        name: 'Hoa Sơn Tái Xuất',
+        img: imgComics.img2,
+        link: '/truyen-tranh/hoa-son-tai-xuat',
+        chapterNew: '145',
+        timeNew: '2 phút trước',
+        view: '14.004.789',
+        heart: '5036',
+        comment: '6226',
+        hot: 'hot',
+        timeNewUpdate: '08:44 04/06/2022',
+    },
+    {
+        name: 'Streamer Pháp Sư',
+        img: imgComics.img3,
+        link: '/truyen-tranh/streamer-phap-su',
+        chapterNew: '289',
+        timeNew: '3 giờ trước',
+        view: '58.244.262',
+        heart: '753.432',
+        comment: '54.786',
+        hot: 'hot',
+        timeNewUpdate: '08:44 04/06/2022',
+    },
+    {
+        name: 'Tu Tiên Đại Chiến Siêu Năng Lực',
+        img: imgComics.img4,
+        link: '/truyen-tranh/tu-tien-gia-dai-chien-sieu-nang-luc',
         chapterNew: '268',
         timeNew: '5 giờ trước',
         view: '600.454.345',
@@ -523,9 +475,9 @@ const Comics = [
         timeNewUpdate: '08:44 04/06/2022',
     },
     {
-        name: 'Đại Quản Gia Là Ma Hoàng',
-        img: 'http://st.nettruyenco.com/data/comics/188/dai-quan-gia-la-ma-hoang.jpg',
-        link: '/truyen-tranh/dai-quan-gia-la-ma-hoang',
+        name: 'Ta Là Tà Đế',
+        img: imgComics.img5,
+        link: '/truyen-tranh/ta-la-ta-de',
         chapterNew: '268',
         timeNew: '5 giờ trước',
         view: '600.454.345',
@@ -535,9 +487,9 @@ const Comics = [
         timeNewUpdate: '08:44 04/06/2022',
     },
     {
-        name: 'Bắc Kiếm Giang Hồ',
-        img: 'http://st.nettruyenco.com/data/comics/47/bac-kiem-giang-ho.jpg',
-        link: '/truyen-tranh/bac-kiem-giang-ho',
+        name: 'Ta Trời Sinh Đã Là Nhân Vật Phản Diện',
+        img: imgComics.img6,
+        link: '/truyen-tranh/ta-troi-sinh-da-la-nhan-vat-phan-dien',
         chapterNew: '268',
         timeNew: '5 giờ trước',
         view: '600.454.345',
@@ -959,7 +911,7 @@ const ListNavbar = [
         id: 11,
         name: 'Group',
         title: 'group',
-        href: '/group',
+        href: 'https://www.facebook.com/groups/nettruyenonline/',
     },
 ];
 
@@ -1186,4 +1138,76 @@ const listPages = [
     },
 ];
 
-export default { Comics, ListNavbar, listSlider, listComicFol, listTopMonth, listTopUser, listPages };
+const titlePaths = {
+    pathsHot: [
+        {
+            title: 'Hot',
+            link: '/hot',
+        },
+    ],
+    pathsFollower: [
+        {
+            title: 'Theo dõi',
+            link: '/theo-doi',
+        },
+    ],
+    pathsHistory: [
+        {
+            title: 'Lịch sử',
+            link: '/lich-su',
+        },
+    ],
+    pathsCategory: [
+        {
+            title: 'Thể loại',
+            link: '/the-loai',
+        },
+    ],
+    pathsFindComics: [
+        {
+            title: 'Tìm truyện',
+            link: '/tim-truyen-nang-cao',
+        },
+    ],
+    pathsGirl: [
+        {
+            title: 'Con gái',
+            link: '/con-gai',
+        },
+    ],
+    pathsBoy: [
+        {
+            title: 'Con trai',
+            link: '/con-trai',
+        },
+    ],
+    pathsDownloadApp: [
+        {
+            title: 'Tải App',
+            link: '/tai-app',
+        },
+    ],
+    pathLogin: [
+        {
+            title: 'Đăng nhập',
+            link: '/login',
+        },
+    ],
+    pathRegister: [
+        {
+            title: 'Đăng kí',
+            link: '/register',
+        },
+    ],
+};
+
+export default {
+    Comics,
+    ListNavbar,
+    listSlider,
+    listComicFol,
+    listTopMonth,
+    listTopUser,
+    listPages,
+    titlePaths,
+};

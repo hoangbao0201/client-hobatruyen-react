@@ -1,8 +1,9 @@
-import images from '~/assect/images';
+import images from '~/assect/images/logo';
 
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import { Link } from 'react-router-dom';
+import Search from './Search';
 
 const cx = classNames.bind(styles);
 
@@ -16,6 +17,7 @@ function Header() {
                     <a href="/" className={cx('link')}>
                         <img className={cx('img')} src={images.logo} alt="Nettruyen" />
                     </a>
+                    <Search />
                     <div className={cx('grid-accout')}>
                         {currentUser ? (
                             <div>cá nhân</div>

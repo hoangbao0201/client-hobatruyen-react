@@ -1,0 +1,19 @@
+.wrapper {
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+}
+
+.item  {
+    display: inline;
+}
+
+.list li+li::before {
+    padding: 0px 10px;
+    color: #ccc;
+    content: "\00BB";
+}
+
+.link {
+    color: var(--title-path);
+}
+

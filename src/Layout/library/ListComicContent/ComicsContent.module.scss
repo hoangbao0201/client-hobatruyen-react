@@ -61,6 +61,36 @@
 
 //reponsive
 
+@media (min-width: 600px) and (max-width: 770px) {
+    .grid-image {
+        height: 220px;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 600px) {
+    .grid-image {
+        height: 180px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 540px) {
+    .grid-image {
+        height: 260px;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 480px) {
+    .grid-image {
+        height: 220px;
+    }
+}
+
+@media (min-width: 325px) and (max-width: 380px) {
+    .grid-image {
+        height: 180px;
+    }
+}
+
 @media (max-width: 325px) {
     .grid-image {
         height: 320px;

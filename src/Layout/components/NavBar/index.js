@@ -14,11 +14,25 @@ function Navbar({ id }) {
                 <ul className={cx('list-item')}>
                     {FakeApi.ListNavbar.map((item, index) => {
                         return (
-                            <li key={index} className={cx('item', `${item.id === id ? 'active' : ''}`)}>
-                                <Link className={cx('link')} to={item.href}>
-                                    {item.title}
-                                    {item.fontIcon}
-                                </Link>
+                            <li
+                                key={index}
+                                className={cx(
+                                    'item',
+                                    `${item.id === id ? 'active' : ''}`,
+                                    `${item.id >= 8 ? 'rps-dpl-none' : ''}`,
+                                )}
+                            >
+                                {item.id === 11 ? (
+                                    <a target="_blank" className={cx('link', 'bao')} href={item.href}>
+                                        {item.title}
+                                        {item.fontIcon}
+                                    </a>
+                                ) : (
+                                    <Link className={cx('link')} to={`${item.list ? '#' : item.href}`}>
+                                        {item.title}
+                                        {item.fontIcon}
+                                    </Link>
+                                )}
                                 <div className={cx('dropdown')}>
                                     {item.list && <DropDown itemData={item.list} className={item.name} />}
                                 </div>

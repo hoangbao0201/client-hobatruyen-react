@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import images from '~/assect/images';
+import images from '~/assect/images/logo';
 import styles from './Footer.module.scss';
 
 const cx = classNames.bind(styles);

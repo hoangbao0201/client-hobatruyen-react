@@ -1,15 +1,17 @@
 .wrapper {
     width: 100%;
+    padding-bottom: 30px;
     background-color: #ebebeb;
 }
 
 .container {
     width: 1000px;
     padding: 15px 15px;
+    padding-bottom: 20px;
     background-color: #f9f9f9;
     margin-left: auto;
     margin-right: auto;
-    min-height: 500px;
+    // min-height: 500px;
 }
 
 .inner {

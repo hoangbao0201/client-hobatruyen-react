@@ -1,5 +1,5 @@
 :root {
-    --height-wrap: 35px;
+    --height-wrap: 40px;
 }
 
 .wrapper {
@@ -65,7 +65,16 @@
 
 //reponsive
 
-@media (max-width: 990px) {
+@media (min-width: 720px) and (max-width: 990px) {
+    .rps-dpl-none {
+        display: none;
+    }
+    .inner {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 720px) {
     .wrapper {
         display: none;
     }

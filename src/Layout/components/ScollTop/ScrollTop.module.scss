@@ -1,0 +1,15 @@
+.wrapper {
+    position: fixed;
+    width: 42px;
+    line-height: 42px;
+    display: block;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: red;
+    cursor: pointer;
+    border-radius: 8px;
+    right: 20px;
+    bottom: 50px;
+    font-size: 2.5rem;
+    z-index: 100;
+}

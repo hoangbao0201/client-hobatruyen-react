@@ -1,0 +1,23 @@
+.wrapper {
+    color: var(--text-color);
+}
+
+.list-header {
+    padding-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+    li {
+        list-style: auto;
+    }
+}
+
+.list {
+    padding-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    li {
+        list-style-type: disc;
+    }
+}
