@@ -36,7 +36,7 @@ function Login() {
                         <Link to="/forgot-pass" className={cx('link', 'forgot-pass')}>
                             Quên mật khẩu
                         </Link>
-                        <Link to="/register-new" className={cx('link', 'register-new')}>
+                        <Link to="/register" className={cx('link', 'register-new')}>
                             Đăng kí mới
                         </Link>
                     </div>
