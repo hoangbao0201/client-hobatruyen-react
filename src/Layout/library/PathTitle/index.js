@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
-function PathTitle({ paths }) {
+function PathTitle({ paths, pathsMore }) {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('list')}>
@@ -23,6 +23,13 @@ function PathTitle({ paths }) {
                         </li>
                     );
                 })}
+                {pathsMore && (
+                    <li className={cx('item')}>
+                        <Link className={cx('link')} to={pathsMore.link}>
+                            {pathsMore.name}
+                        </Link>
+                    </li>
+                )}
             </div>
         </div>
     );

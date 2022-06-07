@@ -1,0 +1,150 @@
+.name {
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.timeUpdate {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #333;
+    font-style: italic;
+    font-family: Tahoma,sans-serif,Helvetica,Arial;
+    font-weight: 400;
+}
+
+//container
+
+.container {
+    display: flex;
+    padding: 15px 0px;
+    margin: 0px -15px;
+}
+
+.img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.grid-box {
+}
+
+.row {
+    margin-bottom: 15px;
+    color: #777676;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title, .info {
+    padding: 0px;
+}
+
+.title {
+
+
+    span {
+        margin-left: 8px;
+    }
+}
+
+.grid-review {
+}
+
+.link-name {
+    color: #288ad6;
+
+    &:hover {
+        color: #23527c;
+    }
+}
+
+.text-review {
+    color: #000;
+    font-size: 1.4rem;
+}
+
+//button
+
+.btn {
+    padding: 10px 12px;
+    color: #ffff;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.row-btn {
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.follow {
+    background-color: #5cb85c;
+
+    &:hover {
+        background-color: #449d44;
+    }
+}
+.unFollow {
+    background-color: #d9534f;
+
+    &:hover {
+        background-color: #c9302c;
+    }
+}
+.btn-read {
+    background-color: #f0ad4e;
+
+    &:hover {
+        background-color: #ec971f;
+    }
+}
+
+.data-text {
+    
+}
+
+
+
+//reponsive
+
+@media (max-width: 540px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .grid-box {
+        width: 100% !important;
+        
+    }
+    .grid-img {
+        width: 250px !important;
+        margin-bottom: 20px;
+    }
+    .title {
+        padding: 0px !important;
+    }
+}
+
+//cứng
+
+@media (max-width: 990px) {
+    .content {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 990px) {
+    .content {
+        width: 100% !important;
+    }
+    .sidebar {
+        width: 100% !important;
+    }
+}

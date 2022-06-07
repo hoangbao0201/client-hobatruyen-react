@@ -6,11 +6,13 @@ import PathTitle from '~/Layout/library/PathTitle';
 
 const cx = classNames.bind(styles);
 
-function Customize({ children, slider, paths }) {
+// const pathsMore = '';
+
+function Customize({ children, slider, paths, pathsMore }) {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('container')}>
-                {paths && <PathTitle paths={paths} />}
+                {paths && <PathTitle paths={paths} pathsMore={pathsMore} />}
                 {slider && <Slide />}
                 <div className={cx('inner')}>{children}</div>
             </div>

@@ -9,6 +9,7 @@ import DownloadApp from '~/Pages/DownloadApp';
 import Login from '~/Pages/Login';
 import Register from '~/Pages/Register';
 import FindComics from '~/Pages/FindComics';
+import Comics from '~/Pages/Comics';
 
 // Public routes
 const publicRoutes = [
@@ -22,6 +23,7 @@ const publicRoutes = [
     { path: '/tai-app', component: DownloadApp, id: 10 },
     { path: '/login', component: Login },
     { path: '/register', component: Register },
+    { path: '/truyen-tranh/:comicsId', component: Comics },
 ];
 
 const privateRoutes = [];
