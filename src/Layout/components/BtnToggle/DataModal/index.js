@@ -10,7 +10,8 @@ import { useState } from 'react';
 const cx = classNames.bind(styles);
 
 function DataModal({ onClick }) {
-    const [category, setCategory] = useState(false);
+    const [categoryDr, setCategoryDr] = useState(false);
+    const [rankDr, setRankDr] = useState(false);
 
     return (
         <div className={cx('wrapper')}>
@@ -22,17 +23,31 @@ function DataModal({ onClick }) {
                     return (
                         <li className={cx('item')} key={index}>
                             {item.list ? (
-                                <div className={cx('link')} onClick={() => setCategory(!category)}>
-                                    {item.name} {item.fontIcon}
-                                </div>
+                                <>
+                                    {item.name === 'Category' && (
+                                        <div className={cx('link')} onClick={() => setCategoryDr(!categoryDr)}>
+                                            {item.name} {item.fontIcon}
+                                        </div>
+                                    )}
+                                    {item.name === 'Rank' && (
+                                        <div className={cx('link')} onClick={() => setRankDr(!rankDr)}>
+                                            {item.name} {item.fontIcon}
+                                        </div>
+                                    )}
+                                </>
                             ) : (
                                 <Link onClick={onClick} className={cx('link')} to={item.href}>
                                     {item.name}
                                 </Link>
                             )}
-                            {item.list && (
+                            {item.name == 'Category' && (
                                 <div className={cx('dropdownModal')}>
-                                    <DropDown itemData={item.list} className={`${item.name}-modal`} />
+                                    {categoryDr && <DropDown itemData={item.list} className={`${item.name}-modal`} />}
+                                </div>
+                            )}
+                            {item.name == 'Rank' && (
+                                <div className={cx('dropdownModal')}>
+                                    {rankDr && <DropDown itemData={item.list} className={`${item.name}-modal`} />}
                                 </div>
                             )}
                         </li>
