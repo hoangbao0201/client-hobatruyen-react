@@ -11,7 +11,7 @@ import React, { useEffect, useState } from 'react';
 import FakeApi from '~/assect/FakeApi';
 import { Link, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faHeart, faPlus, faRss, faTags, faTimes, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faFileText, faHeart, faPlus, faRss, faTags, faTimes, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
@@ -118,6 +118,27 @@ function Comics() {
                             <button className={cx('btn', 'unFollow')}>
                                 <FontAwesomeIcon icon={faTimes} /> Đọc tiếp
                             </button>
+                        </div>
+                        <div className={cx('row')}>
+                            <div className={cx('row-content')}>
+                                <FontAwesomeIcon icon={faFileText} />
+                                <span>Nội dung</span>
+                            </div>
+                            {comic.content ? (
+                                comic.content
+                            ) : (
+                                <div>
+                                    <Link className={cx('link-content-name')} to={comic.link}>
+                                        Truyện tranh {comic.name}{' '}
+                                    </Link>
+                                    được cập nhật nhanh và đầy đủ nhất tại NetTruyen. Bạn đọc đừng quên để lại bình luận
+                                    và chia sẻ, ủng hộ NetTruyen ra các chương mới nhất của truyện
+                                    <Link className={cx('link-content-name')} to={comic.link}>
+                                        {' '}
+                                        {comic.name}
+                                    </Link>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
