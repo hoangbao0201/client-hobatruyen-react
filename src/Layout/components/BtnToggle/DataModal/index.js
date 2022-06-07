@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
-function DataModal() {
+function DataModal({ onClick }) {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('searchHeader')}>
@@ -17,19 +17,19 @@ function DataModal() {
                 {FakeApi.ListNavbar.map((item, index) => {
                     return (
                         <li className={cx('item')} key={index}>
-                            <Link className={cx('link')} to={item.href}>
+                            <Link onClick={onClick} className={cx('link')} to={item.href}>
                                 {item.name}
                             </Link>
                         </li>
                     );
                 })}
                 <li className={cx('item')}>
-                    <Link className={cx('link')} to="/login">
+                    <Link onClick={onClick} className={cx('link')} to="/login">
                         Đăng nhập
                     </Link>
                 </li>
                 <li className={cx('item')}>
-                    <Link className={cx('link')} to="/register">
+                    <Link onClick={onClick} className={cx('link')} to="/register">
                         Đăng kí
                     </Link>
                 </li>

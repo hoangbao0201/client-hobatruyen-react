@@ -9,21 +9,25 @@ import DataModal from './DataModal';
 const cx = classNames.bind(styles);
 
 function BtnToggle() {
-    const [button, setButton] = useState(true);
+    const [handleToggle, setHandleToggle] = useState(true);
+
+    const handlePaths = () => {
+        setHandleToggle(!handleToggle);
+    };
 
     return (
         <div className={cx('wrapper')}>
-            {button ? (
-                <i className={cx('icon')} onClick={() => setButton((prev) => !prev)}>
+            {handleToggle ? (
+                <i className={cx('icon')} onClick={() => setHandleToggle(!handleToggle)}>
                     <FontAwesomeIcon icon={faBars} />
                 </i>
             ) : (
                 <>
-                    <i className={cx('icon')} onClick={() => setButton((prev) => !prev)}>
+                    <i className={cx('icon')} onClick={() => setHandleToggle(!handleToggle)}>
                         <FontAwesomeIcon icon={faTimes} />
                     </i>
                     <div className={cx('show-dropdown')}>
-                        <DataModal />
+                        <DataModal onClick={handlePaths} />
                     </div>
                 </>
             )}
