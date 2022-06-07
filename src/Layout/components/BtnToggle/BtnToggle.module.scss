@@ -1,0 +1,32 @@
+
+.bars::before {
+    content: "\f0c9";
+}
+
+.icon {
+    background-color: #d0b32e;
+    font-size: 2.8rem;
+    border-radius: 4px;
+    padding: 2px 0px;
+    cursor: pointer;
+
+    svg {
+        min-width: 40px;
+    }
+}
+
+
+//btn toggle dropdown
+
+.show-dropdown {
+    position: absolute;
+    background-color: #000;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    z-index: 110;
+    position: fixed;
+    padding: 15px;
+}

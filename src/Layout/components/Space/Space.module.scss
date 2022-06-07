@@ -1,0 +1,13 @@
+.wrapper {
+    width: 100%;
+    background-color: transparent;
+}
+
+
+//reponsive
+
+@media (max-width: 720px) {
+    .wrapper {
+        height: 50px;
+    }
+}

@@ -5,7 +5,7 @@
 .wrapper {
     width: 100%;
     background-color: var(--bgr-header);
-    
+    z-index: 120;
 }
 
 .row {
@@ -45,4 +45,25 @@
 
 .space {
     margin: 0px 10px;
+}
+
+// dropdown
+
+
+
+
+
+//reponsive
+
+@media (max-width: 720px) {
+    .wrapper {
+        top: 0px;
+        position: fixed;
+    }
+}
+
+@media (max-width: 770px) {
+    .searchHeader {
+        display: none;
+    }
 }

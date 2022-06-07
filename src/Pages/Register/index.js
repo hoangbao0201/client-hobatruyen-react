@@ -19,7 +19,7 @@ function Register() {
     }, []);
 
     return (
-        <Customize paths={FakeApi.titlePaths.pathRegister}>
+        <Customize paths={FakeApi.titlePaths.pathsRegister}>
             <div className={cx('wrapper')}>
                 <div className={cx('container')}>
                     <div className={cx('header')}>

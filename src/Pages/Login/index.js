@@ -17,7 +17,7 @@ function Login() {
     }, []);
 
     return (
-        <Customize paths={FakeApi.titlePaths.pathLogin}>
+        <Customize paths={FakeApi.titlePaths.pathsLogin}>
             <div className={cx('wrapper')}>
                 <div className={cx('container')}>
                     <div className={cx('header')}>

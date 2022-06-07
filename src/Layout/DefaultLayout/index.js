@@ -7,6 +7,7 @@ import Navbar from '~/Layout/components/NavBar';
 import ScrollTop from '~/Layout/components/ScollTop';
 
 import React, { useEffect } from 'react';
+import Space from '~/Layout/components/Space';
 
 const cx = classNames.bind(styles);
 
@@ -20,6 +21,7 @@ function DefaultLayout({ children, id }) {
 
     return (
         <div className={cx('wrapper')}>
+            <Space />
             <ScrollTop />
             <Header />
             <Navbar id={id} />
