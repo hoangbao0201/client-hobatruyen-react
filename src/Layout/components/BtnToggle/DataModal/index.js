@@ -4,10 +4,14 @@ import styles from './DataModal.module.scss';
 import Search from '~/Layout/components/Header/Search';
 import FakeApi from '~/assect/FakeApi';
 import { Link } from 'react-router-dom';
+import DropDown from '~/Layout/library/DropDown';
+import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
 function DataModal({ onClick }) {
+    const [category, setCategory] = useState(false);
+
     return (
         <div className={cx('wrapper')}>
             <div className={cx('searchHeader')}>
@@ -17,9 +21,20 @@ function DataModal({ onClick }) {
                 {FakeApi.ListNavbar.map((item, index) => {
                     return (
                         <li className={cx('item')} key={index}>
-                            <Link onClick={onClick} className={cx('link')} to={item.href}>
-                                {item.name}
-                            </Link>
+                            {item.list ? (
+                                <div className={cx('link')} onClick={() => setCategory(!category)}>
+                                    {item.name} {item.fontIcon}
+                                </div>
+                            ) : (
+                                <Link onClick={onClick} className={cx('link')} to={item.href}>
+                                    {item.name}
+                                </Link>
+                            )}
+                            {item.list && (
+                                <div className={cx('dropdownModal')}>
+                                    <DropDown itemData={item.list} className={`${item.name}-modal`} />
+                                </div>
+                            )}
                         </li>
                     );
                 })}

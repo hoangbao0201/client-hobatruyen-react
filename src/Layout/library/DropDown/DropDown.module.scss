@@ -53,6 +53,35 @@
     }
 }
 
+.Category-modal {
+    left: 0px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .list-column {
+        width: 50%;
+        .link {
+            padding-left: 15px;
+        }
+
+    }
+}
+
+.Rank-modal {
+    left: 0px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+
+    .list-column {
+        width: 50%;
+        .link {
+            padding-left: 15px;
+        }
+
+    }
+}
+
 //------------------------------------------
 
 .styleData {

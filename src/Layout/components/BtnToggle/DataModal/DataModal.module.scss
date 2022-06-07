@@ -1,6 +1,9 @@
 .wrapper {
     width: 100%;
     display: block;
+
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .searchHeader {
@@ -25,3 +28,15 @@
 .active {
     color: #d0b32e!important;
 }
+
+//dropdown modal
+
+
+.link:active ~ .dropdownModal{
+    display: block;
+}
+
+.dropdownModal {
+    display: none;
+}
+
