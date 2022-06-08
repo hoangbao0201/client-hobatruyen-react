@@ -8,9 +8,7 @@ import BtnToggle from '~/Layout/components/BtnToggle';
 
 const cx = classNames.bind(styles);
 
-function Header() {
-    const currentUser = false;
-
+function Header({ currentUser }) {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('row')}>

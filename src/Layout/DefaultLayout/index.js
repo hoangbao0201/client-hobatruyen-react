@@ -19,12 +19,14 @@ function DefaultLayout({ children, id }) {
         });
     }, []);
 
+    const currentUser = false;
+
     return (
         <div className={cx('wrapper')}>
-            <Space />
-            <ScrollTop />
-            <Header />
-            <Navbar id={id} />
+            <Space currentUser />
+            <ScrollTop currentUser />
+            <Header currentUser />
+            <Navbar id={id} currentUser />
             {children}
             <Footer />
         </div>
