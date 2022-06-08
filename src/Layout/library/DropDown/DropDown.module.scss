@@ -1,11 +1,5 @@
 .wrapper {
-    left: 0px;
-    position: absolute;
-    box-shadow: 0px 0px 6px #ccc;
-    background-color: #fff;
-    border-radius: 2px 2px 5px 5px;
-    z-index: 100;
-    overflow: hidden;
+    -webkit-user-select: none;
 }
 
 //General-----------------------------------------
@@ -20,10 +14,8 @@
 
 .link {
     display: block;
-    color: var(--text-color);
     transition: 200ms;
     white-space: nowrap;
-    padding-left: 10px;
 
     &:hover {
         color: #e74c3c;
@@ -39,46 +31,84 @@
 
 .Category {
     min-width: 600px;
+    left: 0px;
+    position: absolute;
+    box-shadow: 0px 0px 6px #ccc;
+    background-color: #fff;
+    color: var(--text-color);
+    border-radius: 2px 2px 5px 5px;
+    z-index: 100;
+    overflow: hidden;
     
     .list-column {
         width: 25%;
+    }
+    .link {
+        padding-left: 10px;
+    }
+    .list-row {
+        display: table;
     }
 }
 
 .Rank {
     min-width: 300px;
+    left: 0px;
+    position: absolute;
+    box-shadow: 0px 0px 6px #ccc;
+    background-color: #fff;
+    color: var(--text-color);
+    border-radius: 2px 2px 5px 5px;
+    z-index: 100;
+    overflow: hidden;
 
     .list-column {
         width: 50%;
+    }
+    .link {
+        padding-left: 10px;
+    }
+    .list-row {
+        display: table;
     }
 }
 
 .Category-modal {
+    width: 100%;
     left: 0px !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
+    padding: 10px 0px;
+    
     .list-column {
         width: 50%;
-        .link {
-            padding-left: 15px;
-        }
-
+    }
+    .link {
+        color: #ffff;
+        padding-left: 15px;
+    }
+    .list-row {
+        display: table;
     }
 }
 
 .Rank-modal {
-    left: 0px !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
     width: 100%;
-
+    left: 0px !important;
+    margin: 15px 0px;
+    
+    .list-row {
+        display: table;
+        width: 100%;
+    }
     .list-column {
         width: 50%;
-        .link {
-            padding-left: 15px;
-        }
-
+    }
+    .link {
+        color: #ffff;
+        padding-left: 15px;
+    }
+    .item {
+        border-left: 1px solid #ffff;
+        border: 1px solid #ffff;
     }
 }
 
@@ -115,7 +145,7 @@
 
 
 @media (max-width: 990px) {
-    .wrapper {
+    .Category, .Rank {
         left: -200px;
     }
 }
