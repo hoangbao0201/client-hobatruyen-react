@@ -29,7 +29,7 @@ function Comics() {
         return comic.link === `/truyen-tranh/${params.comicsId}`;
     });
 
-    const [follow, setFollow] = useState(false);
+    const [follow, setFollow] = useState(true);
 
     return (
         <Customize paths={FakeApi.titlePaths.pathsComics} pathsMore={comic}>
