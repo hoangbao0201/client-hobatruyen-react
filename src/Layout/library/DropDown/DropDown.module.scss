@@ -18,7 +18,7 @@
     white-space: nowrap;
 
     &:hover {
-        color: #e74c3c;
+        color: #e74c3c !important;
         margin-left: 5px;
     }
 }
@@ -45,9 +45,11 @@
     }
     .link {
         padding-left: 10px;
+        color: #000;
     }
     .list-row {
         display: table;
+        width: 100%;
     }
 }
 
@@ -67,9 +69,11 @@
     }
     .link {
         padding-left: 10px;
+        color: #000;
     }
     .list-row {
         display: table;
+        width: 100%;
     }
 }
 
@@ -87,6 +91,7 @@
     }
     .list-row {
         display: table;
+        width: 100%;
     }
 }
 

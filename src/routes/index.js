@@ -10,6 +10,7 @@ import Login from '~/Pages/Login';
 import Register from '~/Pages/Register';
 import FindComics from '~/Pages/FindComics';
 import Comics from '~/Pages/Comics';
+import Error from '~/Pages/Error';
 
 // Public routes
 const publicRoutes = [
@@ -24,6 +25,7 @@ const publicRoutes = [
     { path: '/login', component: Login },
     { path: '/register', component: Register },
     { path: '/truyen-tranh/:comicsId', component: Comics },
+    { path: '*', component: Error },
 ];
 
 const privateRoutes = [];
