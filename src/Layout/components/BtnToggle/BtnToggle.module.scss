@@ -19,14 +19,27 @@
 //btn toggle dropdown
 
 .show-dropdown {
-    position: absolute;
-    background-color: #000;
-    top: 50px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+    // position: absolute;
+    // background-color: #000;
+    // top: 50px;
+    // left: 0px;
+    // right: 0px;
+    // bottom: 0px;
+    // display: block;
+    // z-index: 110;
+    // position: fixed;
+    // padding: 15px;
+
+    width: 100%;
     display: block;
-    z-index: 110;
+    z-index: 9999;
+    height: 100%;
     position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 15px;
+    top: 50px;
+    right: 0px;
+    // display: none;
+    background-color: #141414;
 }
