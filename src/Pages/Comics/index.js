@@ -12,7 +12,6 @@ import FakeApi from '~/assect/FakeApi';
 import { Link, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faFileText, faHeart, faPlus, faRss, faTags, faTimes, faUser } from '@fortawesome/free-solid-svg-icons';
-import Listchapter from '~/Layout/components/Listchapter';
 
 const cx = classNames.bind(styles);
 
@@ -142,7 +141,6 @@ function Comics() {
                             )}
                         </div>
                     </div>
-                    <Listchapter comics={comic} />
                 </div>
             </div>
             <div className={cx('sidebar', 'col-sm-4')}>
