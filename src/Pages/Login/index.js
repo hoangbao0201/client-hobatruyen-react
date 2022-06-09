@@ -26,11 +26,11 @@ function Login() {
                     </div>
                     <div className={cx('box')}>
                         <div className={cx('text')}>Email</div>
-                        <input className={cx('input')}></input>
+                        <input type={'email'} className={cx('input')}></input>
                     </div>
                     <div className={cx('box')}>
                         <div className={cx('text')}>Mật khẩu</div>
-                        <input className={cx('input')}></input>
+                        <input type={'password'} className={cx('input')}></input>
                     </div>
                     <div className={cx('more')}>
                         <Link to="/forgot-pass" className={cx('link', 'forgot-pass')}>

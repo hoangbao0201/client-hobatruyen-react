@@ -4,8 +4,20 @@
     padding-right: 15px;
 }
 
+.col-sm-5 {
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .col-sm-4 {
     width: 33.33333333%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-sm-5 {
+    width: 41.66666667%;
     padding-left: 15px;
     padding-right: 15px;
 }
